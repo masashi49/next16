@@ -1,0 +1,35 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.4/schema.json",
+  "formatter": {
+    "indentWidth": 2,
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "lineWidth": 80
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "correctness": {
+        "noUnusedVariables": "error"
+      },
+      "suspicious": {
+        "noConsole": "warn",
+        "noDebugger": "error"
+      },
+      "style": { "useConst": "error", "useImportType": "error" },
+      "complexity": {
+        "noBannedTypes": "warn",
+        "noExtraBooleanCast": "error",
+        "noForEach": "warn",
+        "noStaticOnlyClass": "error",
+        "noUselessConstructor": "error",
+        "noUselessRename": "error",
+        "noUselessSwitchCase": "error",
+        "useLiteralKeys": "error",
+        "useOptionalChain": "error",
+        "useSimplifiedLogicExpression": "error"
+      }
+    }
+  }
+}
